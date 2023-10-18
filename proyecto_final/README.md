@@ -35,6 +35,46 @@ Tabla de componentes
 | DataNode1    | Guarda los archivos que sube el usuario a traves del Cli, funciona como una persistencia para que el usuario pueda despues acceder a estos      | 3.225.162.204:50051    |
 | DataNode2     | Guarda los archivos que sube el usuario a traves del Cli, funciona como una persistencia para que el usuario pueda despues acceder a estos      | 3.90.130.81:50051     |
 
+# Estructura del codigo
+##proyecto
+├──cli.py
+├──namenode.py
+├──###cli
+│  ├── files_pb2.py
+│  ├── files_pb2_grpc.py
+│  ├── main.py
+│  ├── src
+│  │   ├── hola.txt
+│   └── testupload.txt
+├── requirements.txt
+└── test.txt
+
+###namenode
+├── files_pb2.py
+├── files_pb2_grpc.py
+├── main.py
+├── src
+│   ├── file1.txt
+│   └── testupload.txt
+└── requirements.txt
+└── test.txt
+
+###node
+├── files_pb2.py
+├── files_pb2_grpc.py
+├── main.py
+├── src
+│   ├── file1.txt
+│   ├── file2.txt
+│   ├── hola.txt
+│   ├── test.txt
+│   └── testupload.txt
+└── requirements.txt
+
+###protobufs
+├── files.proto
+
+
 
 # Arquitectura
 
